@@ -4,6 +4,10 @@ html{
    /* background-image: url("back.jpg");*/
     background-size: cover;
 }
+h1{
+    text-shadow:10px 10px 10px teal;
+    letter-spacing: 2px;
+}
 .example{
     font-style:bold;
     color: darkred;
@@ -67,6 +71,10 @@ a:active{
 p:first-child i{
     font-size: large;
 }
-p.foo::before{
+/* p.foo::before{
     content:url(foo.png);
+} */
+img{
+    display:block;
+    margin:0 auto;
 }
