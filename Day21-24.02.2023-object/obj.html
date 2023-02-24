@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Objects</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            name() {
+                console.log('My name is Catherine');
+            }
+        };
+        const mon = Object.create(person);
+        mon.name();
+
+        const example = {
+            years() {
+                console.log(`My age is ${this.age}`);
+            }
+        };
+        function ways(age) {
+            this.age = age;
+        }
+        Object.assign(ways.prototype, example);
+        const pink = new ways(20);
+        pink.years();
+
+    </script>
+</body>
+
+</html>
