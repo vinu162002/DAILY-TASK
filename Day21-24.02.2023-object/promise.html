@@ -6,13 +6,13 @@
     <body>
         <script>
             function samp(){
-            return new Promise((pass,fail) =>{
+            return new Promise((resolve,reject) =>{
                 let l= 'good';
                 if(l ==='good'){
-                    pass();
+                    resolve();
                 }
                 else{
-                    fail();
+                    reject();
                 }
             })};
             // samp.then(()=>console.log(' Pass in the exam '))
